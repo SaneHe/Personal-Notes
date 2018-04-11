@@ -9,7 +9,8 @@
 		$a2=array("blue","yellow");
 		print_r(array_merge($a1,$a2));
 	
-	结果<br>
+	结果
+	
 		Array ( [0] => red [1] => green [2] => blue [3] => yellow )
 
 	注释：如果两个或更多个数组元素有相同的键名，则最后的元素会覆盖其他元素。
@@ -23,7 +24,8 @@
 		$age = "60";
 		$result = compact("firstname", "lastname", "age");
 		print_r($result);
-	结果<br>
+	结果
+	
 		Array ( [firstname] => Bill [lastname] => Gates [age] => 60 )
 
 3. array_chunk  ---  array_chunk(array,size,preserve_key) 
@@ -32,7 +34,8 @@
 	
 		$cars=array("Volvo","BMW","Toyota","Honda","Mercedes","Opel");
 		print_r(array_chunk($cars,2));
-	结果<br>
+	结果
+	
 		Array ( [0] => Array ( [0] => Volvo [1] => BMW ) [1] => Array ( [0] => Toyota [1] => Honda ) [2] => Array ( [0] => Mercedes [1] => Opel ) )
 		
 4.  array_column  ---  array_column(array,column_key,index_key)
