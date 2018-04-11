@@ -2,7 +2,8 @@
 	
 	
 1. array_merge  ---  array_merge(array1,array2,array3...)
-	<br>说明：将一个或者多个数组合并为一个
+
+	说明：将一个或者多个数组合并为一个
 	实例
 	
 		$a1=array("red","green");
@@ -16,7 +17,8 @@
 	注释：如果两个或更多个数组元素有相同的键名，则最后的元素会覆盖其他元素。
 
 2. compact  ---  compact(var1,var2...)
-	<br>说明:创建包含变量名和它们的值的数组
+
+	说明:创建包含变量名和它们的值的数组
 	实例
 	
 		$firstname = "Bill";
@@ -39,7 +41,8 @@
 		Array ( [0] => Array ( [0] => Volvo [1] => BMW ) [1] => Array ( [0] => Toyota [1] => Honda ) [2] => Array ( [0] => Mercedes [1] => Opel ) )
 		
 4.  array_column  ---  array_column(array,column_key,index_key)
-	<br>说明： 返回输入数组中某个单一列的值
+
+	说明： 返回输入数组中某个单一列的值
 	实例
 	
 		$a = array(
@@ -70,3 +73,17 @@
 		  [1] => Jobs
 		  [2] => Zuckerberg
 		)
+
+5  array_diff  ---  array_diff(array1,array2,array3...)
+
+	说明：返回两个数组的差集数组
+	实例
+	
+		$a1=array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
+		$a2=array("e"=>"red","f"=>"green","g"=>"blue");
+
+		$result=array_diff($a1,$a2);
+		print_r($result);
+	结果
+	
+		Array ( [d] => yellow )
