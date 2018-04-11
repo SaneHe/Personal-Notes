@@ -34,3 +34,36 @@
 		print_r(array_chunk($cars,2));
 	结果<br>
 		Array ( [0] => Array ( [0] => Volvo [1] => BMW ) [1] => Array ( [0] => Toyota [1] => Honda ) [2] => Array ( [0] => Mercedes [1] => Opel ) )
+		
+4.  array_column  ---  array_column(array,column_key,index_key)
+	<br>说明： 返回输入数组中某个单一列的值
+	实例
+	
+		$a = array(
+		  array(
+		    'id' => 5698,
+		    'first_name' => 'Bill',
+		    'last_name' => 'Gates',
+		  ),
+		  array(
+		    'id' => 4767,
+		    'first_name' => 'Steve',
+		    'last_name' => 'Jobs',
+		  ),
+		  array(
+		    'id' => 3809,
+		    'first_name' => 'Mark',
+		    'last_name' => 'Zuckerberg',
+		  )
+		);
+
+		$last_names = array_column($a, 'last_name');
+		print_r($last_names);
+	结果
+	
+		Array
+		(
+		  [0] => Gates
+		  [1] => Jobs
+		  [2] => Zuckerberg
+		)
