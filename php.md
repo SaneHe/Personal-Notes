@@ -39,11 +39,6 @@
 			-冒泡排序
 			function bubbleSort( $arr )
 			{
-				if( !is_array($arr) )
-				{
-					// 将字符串分割为数组
-					$arr = str_split($arr);
-				}
 				$len = count( $arr);
 
 				for( $i=1; $i < $len; $i++){
@@ -58,6 +53,36 @@
 				}
 				
 				return $arr;
+			}
+			
+			
+			-快速排序
+			function quickSort( $arr )
+			{	
+				$len = count( $arr );
+				if( $len <= 1)
+				{
+					return $arr;
+				}
+				
+				$base_num = $arr[0];
+				
+				$left_array  = array();
+				$right_array = array();
+				
+				for( $i=1; $i < $len; $++){
+					if( $base_num > $arr[$i] )
+					{
+						$left_array[$i]  = $arr[$i];
+					}esle{
+						$right_array[$i] = $arr[$i];
+					}
+				}
+				
+				$left_array  = quickSort( $left_array );
+				$right_array = quickSort( $right_array );
+				
+				return array_merge( $left_array, array($base_num), $right_array );
 			}
 
 	
