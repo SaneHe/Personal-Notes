@@ -4,6 +4,7 @@
 1. array_merge  ---  array_merge(array1,array2,array3...)
 
 	说明：将一个或者多个数组合并为一个
+	
 	实例
 	
 		$a1=array("red","green");
@@ -19,6 +20,7 @@
 2. compact  ---  compact(var1,var2...)
 
 	说明:创建包含变量名和它们的值的数组
+	
 	实例
 	
 		$firstname = "Bill";
@@ -31,7 +33,8 @@
 		Array ( [firstname] => Bill [lastname] => Gates [age] => 60 )
 
 3. array_chunk  ---  array_chunk(array,size,preserve_key) 
-	<br>说明：将数组分割成新的组块
+	说明：将数组分割成新的组块
+	
 	实例
 	
 		$cars=array("Volvo","BMW","Toyota","Honda","Mercedes","Opel");
@@ -43,6 +46,7 @@
 4.  array_column  ---  array_column(array,column_key,index_key)
 
 	说明： 返回输入数组中某个单一列的值
+	
 	实例
 	
 		$a = array(
@@ -74,9 +78,10 @@
 		  [2] => Zuckerberg
 		)
 
-5  array_diff  ---  array_diff(array1,array2,array3...)
+5.  array_diff  ---  array_diff(array1,array2,array3...)
 
 	说明：返回两个数组的差集数组
+	
 	实例
 	
 		$a1=array("a"=>"red","b"=>"green","c"=>"blue","d"=>"yellow");
