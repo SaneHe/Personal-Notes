@@ -27,7 +27,7 @@
 			            $arr[$i] = $tmp;
 			            fullArrangement( array_slice($arr, 1), $str . $arr[0] ); 
 			        }  
-				 }        
+			    }        
 			}
 
 
