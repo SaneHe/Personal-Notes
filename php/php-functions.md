@@ -92,3 +92,29 @@
 	结果
 	
 		Array ( [d] => yellow )
+		
+6.  implode  ---  implode(separator,array)
+
+	说明：数组元素组合为字符串
+	
+	实例
+	
+		$arr = array('Hello','World!','I','love','Shanghai!');
+		echo implode(" ",$arr);
+		
+	结果
+	
+		Hello World! I love Shanghai!
+		
+7.  explode  ---  explode(separator,string,limit)
+
+	说明：字符串打散为数组
+	
+	实例
+	
+		$str = "Hello world. I love Shanghai!";
+		print_r (explode(" ",$str));
+		
+	结果
+	
+		Array ( [0] => Hello [1] => world. [2] => I [3] => love [4] => Shanghai! )
