@@ -93,7 +93,9 @@
 此题写了两个方法，只是作为参照
    auth by hejilu
    email 18217108467@163.com
-
+	
+	代码如下：
+	
 
 		/**
 		 * 思路为对当前的数组对器 m 整数分割，然后求出平均值，存在一个大于 w 整数的，即为异常，直接返回；效率较高，缺点为分割后的数组内平均			值不存在异常，
@@ -166,3 +168,107 @@
 
 		// var_dump( collectIndex2( $arr, $m, $w ) );
 
+
+4.我们的程序运行过程中用到了一个数组a，数组元素是一个Map/Dictionary。数组元素的“键”和“值”都是字符串类型。在不同的语言中，对应的类型是：PHP的array, Java的HashMap, C++的std::map, Objective-C的NSDictionary, Swift的Dictionary, Python的dict, JavaScript的object, 等等
+示例：
+a[0]["key1"]="value1"
+a[0]["key2"]="value2"
+a[1]["keyA"]="valueA"
+...
+为了方便保存和加载，我们使用了一个基于文本的存储结构，数组元素每行一个：
+text="key1=value1;key2=value2\nkeyA=valueA\n..."
+要求：请实现一个“保存”函数、一个“加载”函数。
+text=store(a);
+a=load(text);
+这两个函数分别用于把数组保存到一个文本字符串中、把文本字符串中的内容读取为数组。
+必须自己手写代码实现保存/加载逻辑，严格按照上述的“每行一个、key=value”的格式保存。
+附加说明：基于上述格式，如果value中有特殊字符，比如有换行符/分号等怎么办？
+如果有思路，请基于上述的格式设计并实现一个完美的方案。
+
+	代码如下：
+	
+		$arr = [ [ "key1" => "value1", "key2" => "value2" ], [ "keyA" => "valueA" ], [ "keyC" => "valueC" ], "keyD" => "valueD" 		];
+		$text = './test.txt';
+
+		/**
+		 * store array function
+		 *
+		 * @param [array] $arr
+		 * @param string $text
+		 * @return int
+		 */
+		function store( $arr, &$text="" )
+		{
+		    if( is_array( $arr ) && !empty( $arr ) ){
+			foreach( $arr as $key => $value ){
+			    if( !is_array( $value ) ){
+				$text .= $key . '=' . $value. ';';
+			    }else{             
+				$text = $text =='' ? $text : substr($text, 0, -1). PHP_EOL;
+				store( $value, $text );
+			    }
+			}
+		    }
+
+		    $encode = mb_detect_encoding($text, array("ASCII",'UTF-8',"GB2312","GBK",'BIG5'));
+		    if( $encode != 'UTF-8' ) {       
+			$text = mb_convert_encoding($text, 'UTF-8', $encode);
+		    }
+		    $text = substr($text, 0, -1). PHP_EOL;
+
+		    return file_put_contents( "test.txt", $text);
+		}
+
+		// var_dump(store( $arr ) );
+
+		/**
+		 * read text content function
+		 *
+		 * @param [path] $text
+		 * @return array
+		 */
+		function load( $text )
+		{
+		    $text = file_get_contents( $text );
+		    $arr = strToArr( $text );
+
+		    return $arr;
+		}
+
+		/**
+		 * strToArr function
+		 *
+		 * @param [string] $text
+		 * @param array $arr
+		 * @param [string] $delimiter
+		 * @return array
+		 */
+		function strToArr( $text, &$arr=array(), $delimiter = PHP_EOL )
+		{              
+		    static $index =0;
+
+		    if( strpos( $text, $delimiter ) !== false )
+		    {
+			$arrTmp  =  explode( $delimiter, $text);
+			$arrTmp  = array_filter( $arrTmp );
+
+			foreach( $arrTmp as $keys => $tmp ){
+
+			    strToArr( $tmp, $arr, ';' );
+			    if( $delimiter === PHP_EOL ) $index ++;
+			}
+		    }else{
+
+			$key = substr( $text, 0, strpos( $text, '=') );
+			$value = substr( $text, -(strlen($text) - strpos( $text, '=') -1) );
+
+			$arr[ $index ][ $key ] = $value;
+		    }
+		    return $arr;
+		}
+
+		// var_dump(load( $text ) );
+
+		/**
+		 * 如果有换行符/分号等情况，我的想法是可以在我存储数组的过程中先对这些字符进行替换，将其以其他形式存在，然后读取的时候再对其转换
+		 */
