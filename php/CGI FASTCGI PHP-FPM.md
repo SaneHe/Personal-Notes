@@ -36,7 +36,7 @@
 
 ## 原理图及运行过程：
 
-    ![运行原理](/media/php_process.png)
+![运行原理](/media/php_process.png)
 
     一、Web Server启动时载入FastCGI进程管理器（Apache Module或IIS ISAPI等)
     二、FastCGI进程管理器自身初始化，启动多个CGI解释器进程(可建多个php-cgi)，并等待来自Web Server的连接。
