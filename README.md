@@ -29,4 +29,5 @@ perosnal notes from a school boy :100:
   - [cgi fastcgi php-fpm](php/CGI%20FASTCGI%20PHP-FPM.md)
   - [常用函数](php/php-functions.md)
   - [算法](php/php.md)
+  - [单例模式](php/single-instance.md)
 - [Vue](vue)
