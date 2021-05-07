@@ -3,7 +3,7 @@ haaaa......a
 perosnal notes from a school boy :100:
 
 
-### 索引
+### 目录
 
 - [Apache](apache)
   - [代理](apache/proxy.md)
@@ -18,6 +18,7 @@ perosnal notes from a school boy :100:
 - [Go](go)
 - [K8s](k8s)
 - [Linux](linux)
+  - [常用命令](linux/命令.md)
 - [Mysql](mysql)
   - [mysql 执行顺序](mysql/execution-sequence.md)
   - [mysql 锁机制](mysql/lock.md)
