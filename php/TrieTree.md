@@ -157,3 +157,8 @@ class TrieTree
     // 查询
     $tree[$request->method()]->search(explode('/', 'api/test1'));
 ```
+
+# 参考
+
+- [trie tree](https://geektutu.com/post/gee-day3.html)
+- [trie tree](https://blog.51cto.com/u_12597095/2146233)
