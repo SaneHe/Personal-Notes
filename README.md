@@ -19,7 +19,6 @@ perosnal notes from a school boy :100:
   - [http 协议](http/http分析.md)
   - [http 与 https](http/https-secure.md)
   - [IP 地址](http/ipaddress.md)
-- [Go](go)
 - [K8s](k8s)
   - [kind](k8s/kind)
     - [install-k8s](k8s/kind/kind.yml)
