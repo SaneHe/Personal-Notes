@@ -31,4 +31,5 @@ perosnal notes from a school boy :100:
   - [常用函数](php/php-functions.md)
   - [算法](php/php.md)
   - [单例模式](php/single-instance.md)
+  - [TrieTree](php/TrieTree.md)
 - [Vue](vue)
