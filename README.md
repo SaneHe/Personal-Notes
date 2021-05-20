@@ -8,6 +8,7 @@ perosnal notes from a school boy :100:
 - [algorithm](algorithm)
   - [cap](algorithm/cap.md)
   - [csp actor](algorithm/actor和csp.md)
+  - [Raft](algorithm/Raft.md)
 - [Apache](apache)
   - [代理](apache/proxy.md)
 - [Docker](docker)
