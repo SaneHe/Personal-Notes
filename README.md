@@ -5,6 +5,9 @@ perosnal notes from a school boy :100:
 
 ### 目录
 
+- [algorithm](algorithm)
+  - [cap](algorithm/cap.md)
+  - [csp actor](algorithm/actor和csp.md)
 - [Apache](apache)
   - [代理](apache/proxy.md)
 - [Docker](docker)
@@ -29,6 +32,8 @@ perosnal notes from a school boy :100:
   - [常用命令](linux/命令.md)
 - [Mac](mac)
   - [zshrc - spaceship](mac/zsh/.zshrc)
+- [微服务](microservice)
+  - [注册中心](microservice/registry.md)
 - [Mysql](mysql)
   - [mysql 执行顺序](mysql/execution-sequence.md)
   - [mysql 锁机制](mysql/lock.md)
