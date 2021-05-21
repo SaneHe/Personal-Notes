@@ -31,6 +31,7 @@ perosnal notes from a school boy :100:
   - [redis yaml](k8s/redis.yml)
 - [Linux](linux)
   - [常用命令](linux/命令.md)
+  - [Makefile](linux/makefile.md)
 - [Mac](mac)
   - [zshrc - spaceship](mac/zsh/.zshrc)
 - [微服务](microservice)
