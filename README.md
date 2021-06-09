@@ -51,3 +51,8 @@ perosnal notes from a school boy :100:
   - [TrieTree](php/TrieTree.md)
   - [class-private-access](php/class-private-access.php)
 - [Vue](vue)
+
+### 其他文章
+
+- [MySQL索引原理、B 树、B+树、平衡二叉树](https://blog.csdn.net/gu_zhang_w/article/details/107372917)
+- [laravel 容器 服务提供者 门面](https://www.cnblogs.com/lyzg/p/6181055.html#_label2)
