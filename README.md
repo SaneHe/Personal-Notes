@@ -50,6 +50,9 @@ perosnal notes from a school boy :100:
   - [单例模式](php/single-instance.md)
   - [TrieTree](php/TrieTree.md)
   - [class-private-access](php/class-private-access.php)
+- [Redis](redis)
+  - [缓存雪崩、穿透、失效](redis/缓存雪崩、缓存穿透、缓存失效.md)
+  - [Reds](redis/redis.md)
 - [Vue](vue)
 
 ### 其他文章
