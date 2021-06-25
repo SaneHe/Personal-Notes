@@ -13,6 +13,8 @@ perosnal notes from a school boy :100:
   - [代理](apache/proxy.md)
 - [Docker](docker)
   - [install docker](docker/install-docker.sh)
+- [Git](git)
+  - [工作流](git/workflow.md)
 - [Go](go)
   - [build 脚本](go/build.sh)
   - [docker 模版](go/Dockerfile)
@@ -51,8 +53,8 @@ perosnal notes from a school boy :100:
   - [TrieTree](php/TrieTree.md)
   - [class-private-access](php/class-private-access.php)
 - [Redis](redis)
-  - [缓存雪崩、穿透、失效](redis/缓存雪崩、缓存穿透、缓存失效.md)
-  - [Reds](redis/redis.md)
+  - [缓存雪崩、穿透、击穿](redis/缓存雪崩、缓存穿透、缓存失效.md)
+  - [Reds 基础](redis/redis.md)
 - [Vue](vue)
 
 ### 其他文章
