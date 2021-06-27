@@ -25,6 +25,7 @@ perosnal notes from a school boy :100:
   - [nocodb](docker/nocodb/docker-compose.yml)
   - [harbor](docker/harbor/README.md)
 - [Git](git)
+  - [问题总结](git/problem.md)
   - [工作流](git/workflow.md)
 - [Go](go)
   - [build 脚本](go/build.sh)
