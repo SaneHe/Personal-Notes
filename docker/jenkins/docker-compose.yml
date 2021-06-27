@@ -1,0 +1,22 @@
+version: '2'
+services: 
+  jenkins:
+    build: 
+      context: .
+      args: 
+        user: ${UID}
+        group: ${GROUP}
+        uid: ${UID}
+        gid: ${GID}
+        http_port: ${HTTP_PORT}
+        agent_port: ${AGENT_PORT}
+        JENKINS_VERSION: jenkins:${JENKINS_VERSION}-alpine
+    container_name: jenkins
+    environment: 
+      JENKINS_HOME: "${JENKINS_HOME}"
+      COPY_REFERENCE_FILE_LOG: "${COPY_REFERENCE_FILE_LOG}"
+    ports: 
+      - "8081:8080"
+      - "50000:50000"
+    volumes: 
+      - ./data:/var/jenkins_home:rw

@@ -1,0 +1,24 @@
+version: "3"
+
+services: 
+    proxysql:
+      build: 
+        context: .
+      container_name: proxysql
+      # image: proxysql/proxysql:2.1.1
+      volumes: 
+        - /etc/timezone:/etc/timezone:ro
+        - /etc/localtime:/etc/localtime:ro
+        - ./conf/proxysql.cnf:/etc/proxysql.cnf:ro
+        - ./data:/var/lib/proxysql:rw
+      ports: 
+        - 16070:6070
+        # ProxySQL admin port for MySQL commands 
+        - 16032:6032
+        # ProxySQL main port 
+        - 16033:6033
+        # web
+        - 16080:6080
+      # restart: always
+      environment:
+        MONITOR_CONFIG_CHANGE: "true"

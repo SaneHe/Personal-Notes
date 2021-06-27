@@ -1,0 +1,12 @@
+version: '2'
+services:
+  grafana:
+    container_name: grafana
+    image: grafana/grafana:7.2.1
+    volumes:
+      - ./etc/:/etc/grafana/
+    restart: always
+    ports:
+      - 3002:3000
+    environment: 
+      GF_INSTALL_PLUGINS: grafana-piechart-panel,macropower-analytics-panel,michaeldmoore-annunciator-panel,farski-blendstat-panel,yesoreyeram-boomtable-panel,marcusolsson-calendar-panel,petrslavotinek-carpetplot-panel,briangann-gauge-panel,briangann-datatable-panel,marcusolsson-gantt-panel,mtanda-histogram-panel,woutervh-mapbox-panel,michaeldmoore-multistat-panel,isaozler-paretochart-panel,corpglory-progresslist-panel,snuids-radar-panel,marcusolsson-treemap-panel,magnesium-wordcloud-panel # ,michaeldmoore-scatter-panel

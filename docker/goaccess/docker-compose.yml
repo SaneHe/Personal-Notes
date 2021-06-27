@@ -1,0 +1,21 @@
+version: "3"
+
+services: 
+    goaccess:
+        build: 
+            context: .
+        container_name: goaccess
+        ports: 
+          - "7890:7890"
+        environment: 
+          TZ: "Asia/Shanghai"
+          LANG: "zh_CN"
+        volumes: 
+          - "./data:/goaccess"
+          - "./config/goaccess.conf:/goaccess/goaccess.conf"
+          - "./html/index.html:/goaccess/index.html"
+          - "/data/logs/grafana/access.log:/goaccess/access.log"
+        # restart: always
+        entrypoint: ["goaccess", "--no-global-config", "--config-file=/goaccess/goaccess.conf", "--output=/goaccess/index.html", "--log-file=/goaccess/access.log"]
+        networks: 
+          - default

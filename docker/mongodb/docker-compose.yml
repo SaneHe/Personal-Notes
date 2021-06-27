@@ -1,0 +1,11 @@
+version: '2'
+services:
+  mongo:
+    container_name: "mongo"
+    image: "mongo:2.6.10"
+    volumes:
+      - ./data/db:/data/db/
+      - ./mongodb.conf:/etc/mongodb.conf
+    restart: always
+    ports:
+      - 27017:27017

@@ -1,0 +1,47 @@
+version: '3'
+services:
+  drone-server:
+    image: drone/drone:latest
+    ports:
+      - 8888:80
+    volumes:
+      - ./drone:/var/lib/drone:rw
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: always
+    container_name: drone-server
+    environment:
+      - DRONE_OPEN=false 
+      - DRONE_SERVER_PROTO=http
+      - DRONE_SERVER_HOST=sane.test
+      - DRONE_AGENTS_ENABLED=false
+      - DRONE_LOGS_TRACE=true
+      - DRONE_LOGS_DEBUG=true
+      - DRONE_GOGS=true
+      - DRONE_GOGS_SERVER=http://sane.test
+      - DRONE_PROVIDER=gogs
+      - DRONE_USER_FILTER=sane
+      # - DRONE_DATABASE_DATASOURCE=/var/lib/drone/drone.sqlite
+      # - DRONE_DATABASE_DRIVER=sqlite3
+      - DRONE_DATABASE_SECRET=21321
+      - DRONE_DATABASE_DRIVER=mysql
+      - DRONE_DATABASE_DATASOURCE=root:password@tcp(1.2.3.4:3306)/drone?parseTime=true
+      - DRONE_RPC_SECRET=122jhfdhf
+      - DRONE_USER_CREATE=username:sane,admin:true
+      - DRONE_UI_USERNAME=root
+      - DRONE_UI_PASSWORD=root
+
+  drone-agent:
+    image: drone/agent:latest
+    depends_on:
+      - drone-server
+    volumes:
+      - /var/run/docker.sock:/var/run/docker.sock
+    restart: always
+    container_name: drone-agent
+    environment:
+      - DRONE_RPC_SERVER=http://drone-server
+      - DRONE_RPC_SECRET=122jhfdhf
+      - DRONE_LOGS_TRACE=true
+      - DRONE_LOGS_DEBUG=true
+      - DRONE_RUNNER_CAPACITY=2
+    dns: 114.114.114.114
