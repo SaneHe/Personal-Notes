@@ -55,6 +55,7 @@ perosnal notes from a school boy :100:
   - [mysql 锁机制](mysql/lock.md)
   - [mysql 主从](mysql/Master-Slave.md)
   - [mysql 权限](mysql/permission.md)
+  - [B+树](mysql/tree.md)
 - [Nginx](nginx)
   - [基础配置文件](nginx/nginx.conf.md)
 - [Php](php)
