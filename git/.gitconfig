@@ -1,0 +1,65 @@
+[user]
+	name = sane
+	email = 18217108467@163.com
+[core]
+	quotepath = false
+	autocrlf = input
+	excludesfile = /Users/sanehe/.gitignore_global
+[gui]
+	encoding = utf-8
+[i18n "commit"]
+	encoding = utf-8
+[i18n]
+	logoutputencoding = utf-8
+[credential]
+	helper = manager
+[alias]
+	s = status
+	co = commit	-m
+	st = status
+	br = branch
+	suto = branch
+	rs = reset --hard
+
+	coam = commit --amend
+
+ 	plm = pull origin master --rebase
+	psm = push origin master
+
+	# rebase
+	pr = pull --rebase
+
+	# 删除分支并推送
+	pbd = "!d() { git branch -D $1 && git push origin --delete $1; }; d"
+	brd = branch -d 
+	pd = push origin --delete
+
+	# 设置跟踪分支
+	bs = "!f() { git branch --set-upstream-to=origin/$1 $1; }; f"
+
+	# 分支切换
+	ch = checkout
+	ck = checkout
+	cb = checkout -b
+	cm = checkout master
+	cp = checkout preview
+	ct = checkout test
+	cht = checkout hotfix
+
+	# 标签
+	t = "!f() { git tag -a $1; }; f" # 打标签
+	bt = "!f() { git push origin $1; }; f"	# 推送标签
+
+[filter "lfs"]
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+	clean = git-lfs clean -- %f
+; [difftool "sourcetree"]
+; 	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+; 	path = 
+; [mergetool "sourcetree"]
+; 	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+; 	trustExitCode = true
+; [commit]
+; 	template = /Users/sanehe/.stCommitMsg
