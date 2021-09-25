@@ -50,6 +50,8 @@ perosnal notes from a school boy :100:
   - [build 脚本](go/build.sh)
   - [docker 模版](go/Dockerfile)
   - [trie tree](go/trietree.md)
+  - [struct pointer](go/struct-pointer.md)
+  - [struct interface](go/struct-interface.md)
 
   </details>
 - <details>
