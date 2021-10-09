@@ -120,7 +120,8 @@ perosnal notes from a school boy :100:
   - [算法](php/php.md)
   - [单例模式](php/single-instance.md)
   - [TrieTree](php/TrieTree.md)
-  - [class-private-access](php/class-private-access.php)
+  - [class-private-access](php/class-private-access.md)
+  <!-- - [php-队列脚本消费思考-堆、栈](php/php-队列脚本消费思考.md) -->
 
   </details>
 - <details>
