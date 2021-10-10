@@ -85,6 +85,7 @@ perosnal notes from a school boy :100:
   
   - [常用命令](linux/命令.md)
   - [Makefile](linux/makefile.md)
+  - [堆 栈](linux/heap-stack.md)
 
   </details>
 - <details>
