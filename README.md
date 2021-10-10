@@ -20,6 +20,12 @@ perosnal notes from a school boy :100:
 
   </details>
 - <details>
+  <summary>数据结构</summary>
+
+  - [堆 栈](data-structure/stack.md)
+
+  </details>
+- <details>
   <summary>Docker</summary>
   
   - [install docker](docker/install-docker.sh)
