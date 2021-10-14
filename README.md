@@ -58,6 +58,7 @@ perosnal notes from a school boy :100:
   - [trie tree](go/trietree.md)
   - [struct pointer](go/struct-pointer.md)
   - [struct interface](go/struct-interface.md)
+  - [堆栈分配以及逃逸分析](go/escape-analysis.md)
 
   </details>
 - <details>
