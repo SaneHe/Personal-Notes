@@ -60,6 +60,7 @@ perosnal notes from a school boy :100:
   - [struct interface](go/struct-interface.md)
   - [堆栈分配以及逃逸分析](go/escape-analysis.md)
   - [function optional](go/function-optional.md)
+  - [do-timeOut](go/do-timeout.md)
 
   </details>
 - <details>
