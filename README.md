@@ -56,6 +56,7 @@ perosnal notes from a school boy :100:
   - [build 脚本](go/build.sh)
   - [docker 模版](go/Dockerfile)
   - [trie tree](go/trietree.md)
+  - [含有中英文的大文件读取](go/read-big-file.md)
   - [struct pointer](go/struct-pointer.md)
   - [struct interface](go/struct-interface.md)
   - [堆栈分配以及逃逸分析](go/escape-analysis.md)
