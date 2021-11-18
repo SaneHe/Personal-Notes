@@ -126,6 +126,7 @@ perosnal notes from a school boy :100:
 - <details>
   <summary>Php</summary>
   
+  - [hyperf之事件](php/hyperf/hyperf之事件源码分析.md)
   - [dingo 包安装](php/laravel/install-dingo.md)
   - [cgi fastcgi php-fpm](php/CGI%20FASTCGI%20PHP-FPM.md)
   - [常用函数](php/php-functions.md)
