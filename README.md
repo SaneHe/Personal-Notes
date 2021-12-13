@@ -63,6 +63,7 @@ perosnal notes from a school boy :100:
   - [function optional](go/function-optional.md)
   - [do-timeOut](go/do-timeout.md)
   - [unsafe.pointer、uintptr和普通指针](go/unsafe-pointer.md)
+  - [Consistent-Hash](go/一致性哈希.md)
 
   </details>
 - <details>
