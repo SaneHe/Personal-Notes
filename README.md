@@ -5,7 +5,7 @@ perosnal notes from a school boy :100:
 
 ### 目录
 
-- <details>
+- <details open>
   <summary>Algorithm</summary>
 
   - [cap](algorithm/cap.md)
@@ -13,19 +13,19 @@ perosnal notes from a school boy :100:
   - [Raft](algorithm/Raft.md)
 
   </details>
-- <details>
+- <details open>
   <summary>Apache</summary>
 
   - [代理](apache/proxy.md)
 
   </details>
-- <details>
+- <details open>
   <summary>数据结构</summary>
 
   - [堆 栈](data-structure/stack.md)
 
   </details>
-- <details>
+- <details open>
   <summary>Docker</summary>
   
   - [install docker](docker/install-docker.sh)
@@ -42,7 +42,7 @@ perosnal notes from a school boy :100:
   - [harbor](docker/harbor/README.md)
 
   </details>
-- <details>
+- <details open>
   <summary>Git</summary>
   
   - [别名](git/.gitconfig)
@@ -50,7 +50,7 @@ perosnal notes from a school boy :100:
   - [工作流](git/workflow.md)
 
   </details>
-- <details>
+- <details open>
   <summary>Go</summary>
 
   - [build 脚本](go/build.sh)
@@ -66,7 +66,7 @@ perosnal notes from a school boy :100:
   - [Consistent-Hash](go/一致性哈希.md)
 
   </details>
-- <details>
+- <details open>
   <summary>Http</summary>
   
   - [状态码](http/status-code.md)
@@ -76,7 +76,7 @@ perosnal notes from a school boy :100:
   - [IP 地址](http/ipaddress.md)
 
   </details>
-- <details>
+- <details open>
   <summary>K8s</summary>
   
   - [kind](k8s/kind)
@@ -86,28 +86,30 @@ perosnal notes from a school boy :100:
   - [redis yaml](k8s/redis.yml)
 
   </details>
-- <details>
+- <details open>
   <summary>Linux</summary>
   
   - [常用命令](linux/命令.md)
   - [Makefile](linux/makefile.md)
   - [堆 栈](linux/heap-stack.md)
+  - [阻塞、非阻塞、同步、异步](linux/阻塞-非阻塞-同步-异步.md)
+  - [cpu dispatch](linux/cpu-dispatch.md)
 
   </details>
-- <details>
+- <details open>
   <summary>Mac</summary>
   
   - [zshrc - spaceship](mac/zsh/.zshrc)
   - [Mac 推荐网站](mac/recommend-website.md)
 
   </details>
-- <details>
+- <details open>
   <summary>微服务</summary>
   
   - [注册中心](microservice/registry.md)
 
   </details>
-- <details>
+- <details open>
   <summary>Mysql</summary>
   
   - [执行顺序](mysql/execution-sequence.md)
@@ -118,13 +120,13 @@ perosnal notes from a school boy :100:
   - [B+树](mysql/tree.md)
 
   </details>
-- <details>
+- <details open>
   <summary>Nginx</summary>
   
   - [基础配置文件](nginx/nginx.conf.md)
 
   </details>
-- <details>
+- <details open>
   <summary>Php</summary>
   
   - [hyperf之事件](php/hyperf/hyperf之事件源码分析.md)
@@ -138,14 +140,14 @@ perosnal notes from a school boy :100:
   - [php-队列脚本消费思考](php/php-队列脚本消费思考.md)
 
   </details>
-- <details>
+- <details open>
   <summary>Redis</summary>
 
     - [缓存雪崩、穿透、击穿](redis/缓存雪崩、缓存穿透、缓存失效.md)
     - [Reds 基础](redis/redis.md)
   
   </details>
-- <details>
+- <details open>
   <summary>Vue</summary>
 
   - [安装](vue/config.md)
