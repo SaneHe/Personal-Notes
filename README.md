@@ -139,6 +139,7 @@ perosnal notes from a school boy :100:
   - [class-private-access](php/class-private-access.md)
   - [php-队列脚本消费思考](php/php-队列脚本消费思考.md)
   - [四大经典排序](php/four-classic-sorts.md)
+  - [所有子集](php/all-subsets.md)
 
   </details>
 - <details open>
