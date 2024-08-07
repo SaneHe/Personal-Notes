@@ -53,6 +53,7 @@ perosnal notes from a school boy :100:
 - <details open>
   <summary>Go</summary>
 
+  - [抢占式调度](go/抢占式调度.md)
   - [build 脚本](go/build.sh)
   - [docker 模版](go/Dockerfile)
   - [trie tree](go/trietree.md)
@@ -61,6 +62,7 @@ perosnal notes from a school boy :100:
   - [struct interface](go/struct-interface.md)
   - [堆栈分配以及逃逸分析](go/escape-analysis.md)
   - [function optional](go/function-optional.md)
+  - [map使用事项](go/map使用事项.md)
   - [do-timeOut](go/do-timeout.md)
   - [unsafe.pointer、uintptr和普通指针](go/unsafe-pointer.md)
   - [Consistent-Hash](go/一致性哈希.md)
